@@ -33,7 +33,7 @@
         /* عدل على عرض الصورة */
       }
 
-      h2{
+      .status{
         color: red;
       }
 
@@ -41,6 +41,7 @@
         background-color: red;
         transition: all 0.5s ease-in-out;
         opacity: 1;
+        color: white;
       }
 
       .two:hover{
@@ -56,7 +57,14 @@
       .pCenter{
         text-align: center;
       }
+      
+      .pNone{
+        display: none;
+      }
 
+      .status:hover + p{
+        display: block;
+      }
 
 
     </style>
@@ -81,9 +89,13 @@
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
     <div class="square">
-      <div class="circle one"></div>
-      <div class="circle two"></div>
-      <div class="circle three"></div>
+      <div class="circle one status"></div>
+      <p class="pNone" style="color: red;">قـــــف</p>
+      <div class="circle two status"></div>
+      <p class="pNone" style="color: orange;">استــــعد</p>
+      <div class="circle three status"></div>
+      <p class="pNone" style="color: green;">تحـــرك</p>
+      
       <!-- <h2>قـــــف</h3> -->
     </div>
 
