@@ -33,12 +33,16 @@
         /* عدل على عرض الصورة */
       }
 
+      .stop{
+        width: 100px;
+        opacity: 0;
+      }
+
       .status{
         color: red;
       }
 
-      .one:hover{
-        background-color: red;
+      .one:hover > .stop{
         transition: all 0.5s ease-in-out;
         opacity: 1;
         color: white;
@@ -58,13 +62,13 @@
         text-align: center;
       }
       
-      .pNone{
+      /* .pNone{
         display: none;
-      }
+      } */
 
-      .status:hover + p{
+      /* .status:hover + p{
         display: block;
-      }
+      } */
 
 
     </style>
@@ -89,12 +93,12 @@
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
     <div class="square">
-      <div class="circle one status"></div>
-      <p class="pNone" style="color: red;">قـــــف</p>
+      <div class="circle one status"> <img src="./img/stop.png" class="stop"></div>
+      <!-- <p class="pNone" style="color: red;">قـــــف</p> -->
       <div class="circle two status"></div>
-      <p class="pNone" style="color: orange;">استــــعد</p>
+      <!-- <p class="pNone" style="color: orange;">استــــعد</p> -->
       <div class="circle three status"></div>
-      <p class="pNone" style="color: green;">تحـــرك</p>
+      <!-- <p class="pNone" style="color: green;">تحـــرك</p> -->
       
       <!-- <h2>قـــــف</h3> -->
     </div>
